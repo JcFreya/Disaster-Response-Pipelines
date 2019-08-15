@@ -42,7 +42,7 @@ def clean_data(df):
     # use this row to extract a list of new column names for categories.
     # one way is to apply a lambda function that takes everything 
     # up to the second to last character of each string with slicing
-    category_colnames = row.apply(lambda x: x[:-2])
+    category_colnames = list(row.apply(lambda x: x[:-2]))
     
     # rename the columns of `categories`
     categories.columns = category_colnames
@@ -53,7 +53,10 @@ def clean_data(df):
     
     # convert column from string to numeric
     categories[column] = categories[column].astype(int)
-
+    
+    # Convert all value into binary (0 or 1)
+    categories = (categories > 0).astype(int)
+    
     # drop the original categories column from `df`
     df.drop('categories', axis = 1, inplace=True)
     
