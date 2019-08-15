@@ -30,7 +30,8 @@ In a Python script, train_classifier.py, write a machine learning pipeline that:
 3. Flask Web App
 - Modify file paths for database and model as needed
 - Add data visualizations using Plotly in the web app. One example is provided for you
-
+![screenshot1](https://github.com/JcFreya/Disaster-Response-Pipelines/blob/master/img/Screen%20Shot%202019-08-15%20at%203.57.54%20PM.png)
+![screenshot2](https://github.com/JcFreya/Disaster-Response-Pipelines/blob/master/img/Screen%20Shot%202019-08-15%20at%203.58.22%20PM.png)
 
 ### Install
 
@@ -86,7 +87,4 @@ https://SPACEID-3001.SPACEDOMAIN
 
 The data set contains real messages that were sent during disaster events.
 
-**Features**
-
-**Target Variable**
 
